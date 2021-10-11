@@ -1,0 +1,7 @@
+{
+  "tabWidth": 1,
+  "printWidth": 200,
+  "useTabs": false,
+  "bracketSameLine": true,
+  "angleBracketSameLine": true
+}
