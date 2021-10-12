@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-udemy78-material-node-mongo-firebase';
+  title = 'Curso de Angular-udemy78-material-node-mongo-firebase';
 }
