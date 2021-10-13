@@ -10,9 +10,10 @@ export class StringInterpolationComponent implements OnInit {
   firstname = 'John';
   person = {
     firstname: 'Lennon',
-    lastname: 'Beatles'
+    lastname: 'Beatles',
+    age: 32,
+    address: 'Route 100'
   }
-  age = 34;
 
   constructor() { }
 
