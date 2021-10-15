@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 
 @Component({
@@ -13,6 +13,8 @@ export class EventBindingComponent implements OnInit {
  color = 'primary';
  value = 100;
  btnEnable = true;
+ selectDisabled = false;
+ selectedOption = '';
 
  constructor() {}
 
@@ -35,5 +37,15 @@ export class EventBindingComponent implements OnInit {
    this.btnEnable = true;
    this.mode = 'determinate';
   }, 3000);
+ }
+
+ cbChange(event: any) {
+  console.log(event.checked)
+  this.selectDisabled = event.checked;
+ }
+
+ selectionChange(event: any) {
+  this.selectedOption = event.value;
+  console.log('this.selectedOption = ', this.selectedOption)
  }
 }
